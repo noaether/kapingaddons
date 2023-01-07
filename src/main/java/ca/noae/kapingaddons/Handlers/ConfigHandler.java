@@ -13,17 +13,20 @@ public class ConfigHandler {
     public static class messageConfig {
         // Cannot be modified
         public static FileConfiguration config = plugin.getConfig();
+
         public static int getInt(String path) {
             return config.getInt(path);
         }
+
         public static String getString(String path) {
             String response = config.getString(path);
-            if(response == null) {
+            if (response == null) {
                 return path;
             } else {
                 return response;
             }
         }
+
         public static boolean getBoolean(String path) {
             return config.getBoolean(path);
         }
@@ -32,17 +35,20 @@ public class ConfigHandler {
     public static class databaseConfig {
         // Can be modified and saved
         public static FileConfiguration config = plugin.getConfig();
+
         public static int getInt(String path) {
             return config.getInt(path);
         }
+
         public static String getString(String path) {
             String response = config.getString(path);
-            if(response == null) {
+            if (response == null) {
                 return path;
             } else {
                 return response;
             }
         }
+
         public static boolean getBoolean(String path) {
             return config.getBoolean(path);
         }
@@ -51,6 +57,7 @@ public class ConfigHandler {
             config.set(path, value);
             plugin.saveConfig();
         }
+
         public static void save() {
             plugin.saveConfig();
         }
