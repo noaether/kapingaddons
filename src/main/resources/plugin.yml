@@ -1,0 +1,41 @@
+name: Kaping-Addons
+version: '${project.version}'
+main: ca.noae.kapingaddons.PluginMain
+api-version: 1.18
+authors: [ Noae ]
+description: Addons and fun stuff for the KapingaClub
+website: noae.ca/lamamandeilyas
+commands:
+   gmc:
+      aliases: [gmcreative]
+      description: Change your gamemode or someone's gamemode to creative
+      permission: kapingaddons.gamemode.self.gmc
+      permission-message: "perm : kapingaddons.gamemode.self.gmc"
+   gms:
+      aliases: [gmsurvival]
+      description: Change your gamemode or someone's gamemode to survival
+      permission: kapingaddons.gamemode.self.gms
+      permission-message: "perm : kapingaddons.gamemode.self.gms"
+   gmsp:
+      aliases: [gmspectator]
+      description: Change your gamemode or someone's gamemode to spectator
+      permission: kapingaddons.gamemode.self.gmsp
+      permission-message: "perm : kapingaddons.gamemode.self.gmsp"
+   gma:
+      aliases: [gmadventure]
+      description: Change your gamemode or someone's gamemode to adventure
+      permission: kapingaddons.gamemode.self.gma
+      permission-message: "perm : kapingaddons.gamemode.self.gma"
+
+permissions:
+   # GAMEMODES
+   kapingaddons.gamemode.other:
+      description: "Change someone's gamemode"
+   kapingaddons.gamemode.self.gmc:
+      description: "Change your gamemode to creative"
+   kapingaddons.gamemode.self.gms:
+      description: "Change your gamemode to survival"
+   kapingaddons.gamemode.self.gmsp:
+      description: "Change your gamemode to spectator"
+   kapingaddons.gamemode.self.gma:
+      description: "Change your gamemode to adventure"

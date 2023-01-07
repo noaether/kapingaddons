@@ -1,0 +1,25 @@
+config:
+
+# TODO : Add colors to messages
+messages:
+  error:
+    args: "You should provide arguments for this command. §4%usage%§r"
+    noperm: "You don't have permission to use this command."
+    doesntexist: "The §4%error%§r you provided does not exist."
+    noconsole: "You can't use this command from the console."
+    max: "You have reached the maximum amount of §4%error%§r you can have."
+
+  gamemode:
+    other: "Changed %player%'s gamemode to %gamemode%"
+    self: "You changed your gamemode to %gamemode%"
+
+dbscheme:
+  homes:
+    NGU_Pocoyo:
+      number: 1
+      bed:
+        x: 0
+        y: 0
+        z: 0
+        world: world
+db:
