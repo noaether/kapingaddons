@@ -2,6 +2,8 @@ config:
 
 # TODO : Add colors to messages
 messages:
+  join: "[+] %player%"
+  quit: "[-] %player%"
   error:
     args: "You should provide arguments for this command. §4%usage%§r"
     noperm: "You don't have permission to use this command."
@@ -12,14 +14,3 @@ messages:
   gamemode:
     other: "Changed %player%'s gamemode to %gamemode%"
     self: "You changed your gamemode to %gamemode%"
-
-dbscheme:
-  homes:
-    NGU_Pocoyo:
-      number: 1
-      bed:
-        x: 0
-        y: 0
-        z: 0
-        world: world
-db:

@@ -26,6 +26,16 @@ commands:
       description: Change your gamemode or someone's gamemode to adventure
       permission: kapingaddons.gamemode.self.gma
       permission-message: "perm : kapingaddons.gamemode.self.gma"
+   adminmode:
+      aliases: [adminmode]
+      description: adminmode
+      permission: kapingaddons.admin.adminmode
+      permission-message: "perm : kapingaddons.admin.adminmode"
+   vanish:
+      aliases: [vanish]
+      description: vanish
+      permission: kapingaddons.admin.vanish
+      permission-message: "perm : kapingaddons.admin.vanish"
 
 permissions:
    # GAMEMODES
