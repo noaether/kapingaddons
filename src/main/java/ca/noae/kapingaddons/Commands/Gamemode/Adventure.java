@@ -51,12 +51,13 @@ public class Adventure implements CommandExecutor {
                 MessageHandler.InGame.sendMessage((Player) sender,
                         ConfigHandler.messageConfig.getString("messages.gamemode.other")
                                 .replace("%player%", player.getName()).replace("%gamemode%", gamemodeString));
+            } else {
+                Player player = (Player) sender;
+                player.setGameMode(gamemode);
+                MessageHandler.InGame.sendMessage(player,
+                        plugin.getConfig().getString("messages.gamemode.self").replace("%gamemode%", gamemodeString));
             }
-            ;
-            Player player = (Player) sender;
-            player.setGameMode(gamemode);
-            MessageHandler.InGame.sendMessage(player,
-                    plugin.getConfig().getString("messages.gamemode.self").replace("%gamemode%", gamemodeString));
+
             return true;
         }
         return false;
